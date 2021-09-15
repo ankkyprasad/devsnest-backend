@@ -51,7 +51,7 @@ program.command("movefile <oldpath> <newpath>").action((oldpath, newpath) => {
   });
 });
 
-//node index.js appendfile data/text.txt world
+//node index.js appendfile data/text.txt
 program.command("appendfile <path> <content>").action((path, content) => {
   fs.appendFile(path, content, (err) => {
     console.log(err);
