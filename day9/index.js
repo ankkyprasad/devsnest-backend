@@ -3,6 +3,8 @@ const path = require("path");
 
 const app = express();
 
+const port = process.env.PORT || 5000;
+
 app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "jade");
 
@@ -20,4 +22,4 @@ app.get("/song/:name", (req, res) => {
   res.sendFile(path.join(__dirname, `public/audio/${songFile}`));
 });
 
-app.listen(5000);
+app.listen(port);
