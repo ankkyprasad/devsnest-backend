@@ -1,0 +1,17 @@
+.App {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.card {
+  border: 1px solid black;
+  width: 20%;
+  height: 20vh;
+  margin: 1.5rem 0;
+  padding: 1.5rem;
+}
+
+.card-item {
+  position: absolute;
+}
